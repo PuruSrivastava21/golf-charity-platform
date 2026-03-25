@@ -7,10 +7,8 @@ dotenv.config();
 
 const app = express();
 
-const cors = require("cors");
-
 app.use(cors({
-  origin: "https://golf-charity-platform-three-mocha.vercel.app",
+  origin: "*",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
