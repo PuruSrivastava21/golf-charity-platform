@@ -1,7 +1,5 @@
 import axios from "axios";
 
-const instance = axios.create({
-  baseURL: "http://localhost:5000/api", // backend URL
+export default axios.create({
+  baseURL: "https://golf-charity-mxdx.onrender.com/api"
 });
-
-export default instance;
